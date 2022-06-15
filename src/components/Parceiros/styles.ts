@@ -26,7 +26,9 @@ export const ImgContent = styled.div`
 
     img {
         size: 8rem;
-        height: 7rem;
+        height: 6rem;
+        margin: 0.5rem 1rem;
         border-radius: 1rem;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
     }
 `;

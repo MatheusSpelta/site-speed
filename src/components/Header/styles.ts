@@ -3,15 +3,24 @@ import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 
 export const Container = styled.nav` 
-    max-width: 1120px;
-    margin-bottom: -2rem;
-    margin-top: -1.5rem;
-    background: transparent;
-    position: sticky;
+    width: 100%;
+    height: 6rem;
+    margin-top: -1.1rem;
+    background: var(--background);
+    background-image: 
+          linear-gradient(
+           to bottom,
+           rgba(0,0,0,0),
+           rgba(0,0,0,0.2),
+          );
+        opacity: 1;
     display: flex;
+    position: sticky;
+    top: 0;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
     z-index: 12;
 `;
 
@@ -84,8 +93,8 @@ export const ImgLink = styled(Link)`
     position: relative;
     
     img {
-        size: 4rem;
-        height: 6rem;
+        size: 3rem;
+        height: 5rem;
     
         &:hover {
             transition: 200ms;

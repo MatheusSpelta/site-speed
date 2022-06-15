@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logoImg from '../../assets/logo-speed.png';
+import { Link } from 'react-router-dom';
 
 import {
     Container,
@@ -14,24 +15,16 @@ interface HeaderProps {
 }
 
 export function Header({ onOpenNewTransactionModal }: HeaderProps) {
-    const [navbar, setNavbar] = useState(false)
-
-    function changeBackground() {
-        if (window.scrollY >= 120) {
-            setNavbar(true)
-        }
-        setNavbar(false)
-    }
-
-    window.addEventListener('scroll', changeBackground)
-
     return (
-        <Container>
+        <Container className="Containerbar active">
                 <ImgLink to="/">
                     <img src={logoImg} alt="logo-speed" />
                 </ImgLink>
             <NavMenu>
                 <Bars />
+                <NavLink to="/">
+                    Home
+                </NavLink>
                 <NavLink to="/certificados">
                     Certificados
                 </NavLink>

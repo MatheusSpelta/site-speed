@@ -12,7 +12,6 @@ import {
 export function Parceiros() {
     return(
         <Container>
-            <h1>Parceiros</h1>
                <Content>
                 <ImgContent>
                     <img src={logoAmigao} alt="amigao"/>

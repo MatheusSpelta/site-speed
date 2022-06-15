@@ -1,6 +1,4 @@
-import React from 'react';
-
-import backgroundImg from '../../../src/assets/background-image.png';
+import backgroundImg from '../../../src/assets/backgroundDashboard.jpg';
 
 import { 
     Container,
@@ -10,7 +8,7 @@ import {
 export function Background() {
   return (
     <Container>
-        <Image src={backgroundImg} alt="Image de fundo"/>
+        <Image src={backgroundImg} alt="Imagem de fundo"/>
     </Container>
   );
 }
